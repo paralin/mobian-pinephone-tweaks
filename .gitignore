@@ -1,0 +1,8 @@
+*.substvars
+
+debian/*.debhelper
+debian/*.log
+debian/files
+debian/debhelper-build-stamp
+debian/pinephone-modem-scripts
+debian/pinephone-tweaks
