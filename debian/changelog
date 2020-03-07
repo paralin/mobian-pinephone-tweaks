@@ -1,3 +1,9 @@
+pinephone-scripts (0.2) unstable; urgency=medium
+
+  * pinephone-tweaks: force Mozilla to use wayland
+
+ -- Arnaud Ferraris <arnaud.ferraris@collabora.com>  Sat, 07 Mar 2020 16:51:25 +0100
+
 pinephone-scripts (0.1) unstable; urgency=medium
 
   * Initial package release
