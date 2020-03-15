@@ -1,3 +1,4 @@
 tweaks/90_pinephone.gschema.override usr/share/glib-2.0/schemas
+tweaks/boot.cmd.template usr/share/pinephone
 tweaks/pinephone-tweaks.sh etc/profile.d
 tweaks/zz-u-boot etc/kernel/postinst.d
