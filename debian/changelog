@@ -1,3 +1,10 @@
+pinephone-scripts (0.3) unstable; urgency=medium
+
+  * pinephone-tweaks: add boot.cmd template
+  * pinephone-tweaks: generate boot script on kernel install
+
+ -- Arnaud Ferraris <arnaud.ferraris@collabora.com>  Sun, 15 Mar 2020 15:04:21 +0100
+
 pinephone-scripts (0.2) unstable; urgency=medium
 
   * pinephone-tweaks: force Mozilla to use wayland
