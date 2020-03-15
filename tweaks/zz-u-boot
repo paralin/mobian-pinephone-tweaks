@@ -2,7 +2,12 @@
 
 version="$1"
 
-echo "Creating u-boot initrd..."
-mkimage -T ramdisk -A arm64 -C none -n pinephone -d /boot/initrd.img-${version} /boot/initrd.uImg || return 1
+if [ -z "$version" ]
+then
+    echo "Usage: $0 <revision>"
+    exit 1
+fi
+
 echo "Creating boot script..."
-mkimage -T script -A arm64 -C none -n pinephone -d /boot/boot.cmd /boot/boot.scr || return 1
+sed -e "s/@@REVISION@@/$version/g" /usr/share/pinephone/boot.cmd.template > /boot/boot.cmd
+mkimage -T script -A arm64 -C none -n pinephone -d /boot/boot.cmd /boot/boot.scr

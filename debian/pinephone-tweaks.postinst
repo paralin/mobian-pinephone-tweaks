@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/etc/kernel/postinst.d/zz-u-boot `uname -r`
