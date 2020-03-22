@@ -1,3 +1,9 @@
+pinephone-scripts (0.4) unstable; urgency=medium
+
+  * pinephone-tweaks: add udev rule to make the proximity sensor usable
+
+ -- Arnaud Ferraris <arnaud.ferraris@collabora.com>  Sun, 22 Mar 2020 11:26:15 +0100
+
 pinephone-scripts (0.3) unstable; urgency=medium
 
   * pinephone-tweaks: add boot.cmd template
