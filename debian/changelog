@@ -1,3 +1,9 @@
+pinephone-scripts (0.5) unstable; urgency=medium
+
+  * pinephone-tweaks: allow gnome-settings-daemon to unlock SIM
+
+ -- Arnaud Ferraris <arnaud.ferraris@collabora.com>  Tue, 24 Mar 2020 09:28:59 +0100
+
 pinephone-scripts (0.4) unstable; urgency=medium
 
   * pinephone-tweaks: add udev rule to make the proximity sensor usable
