@@ -1,3 +1,9 @@
+pinephone-tweaks (0.5) unstable; urgency=medium
+
+  * split into pinephone-modem-scripts and pinephone-tweaks
+
+ -- Arnaud Ferraris <arnaud.ferraris@collabora.com>  Wed, 25 Mar 2020 15:34:08 +0100
+
 pinephone-scripts (0.5) unstable; urgency=medium
 
   * pinephone-tweaks: allow gnome-settings-daemon to unlock SIM

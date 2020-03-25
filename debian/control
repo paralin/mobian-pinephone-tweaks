@@ -1,12 +1,12 @@
-Source: pinephone-scripts
+Source: pinephone-tweaks
 Section: libs
 Priority: optional
 Maintainer: Arnaud Ferraris <arnaud.ferraris@collabora.com>
 Standards-Version: 4.3.0
 Rules-Requires-Root: no
 Build-Depends: debhelper (>= 12)
-Vcs-Git: https://gitlab.com/a-wai/pinephone-scripts.git
-Vcs-Browser: https://gitlab.com/a-wai/pinephone-scripts
+Vcs-Git: https://gitlab.com/a-wai/pinephone-tweaks.git
+Vcs-Browser: https://gitlab.com/a-wai/pinephone-tweaks
 
 Package: pinephone-tweaks
 Architecture: any
@@ -18,11 +18,3 @@ Description: Special tweaks for the PinePhone
    - a kernel post-install script generated a uImage initramfs
    - default environment variables for helping Qt apps and Firefox behave
      properly under Wayland
-
-Package: pinephone-modem-scripts
-Architecture: any
-Depends: modemmanager,
-         ${misc:Depends}
-Description: Modem scripts for the PinePhone
- A set of scripts for the PinePhone modem, allowing to power on/off the modem,
- and configure its audio interface to work properly with the A64 audio codec.

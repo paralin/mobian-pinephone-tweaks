@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: pinephone-scripts
+Upstream-Name: pinephone-tweaks
 Upstream-Contact: Arnaud Ferraris <arnaud.ferraris@collabora.com>
-Source: https://gitlab.com/a-wai/pinephone-scripts
+Source: https://gitlab.com/a-wai/pinephone-tweaks
 
 Files: *
 Copyright: 2020 Arnaud Ferraris
