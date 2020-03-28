@@ -1,6 +1,7 @@
 tweaks/10-proximity.rules etc/udev/rules.d
 tweaks/90_pinephone.gschema.override usr/share/glib-2.0/schemas
 tweaks/boot.cmd.template usr/share/pinephone
+tweaks/org.freedesktop.ModemManager1.pkla etc/polkit-1/localauthority/10-vendor.d/
 tweaks/pinephone.json usr/share/feedbackd/themes/
 tweaks/pinephone-tweaks.sh etc/profile.d
 tweaks/zz-u-boot etc/kernel/postinst.d
