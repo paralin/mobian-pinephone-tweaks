@@ -1,3 +1,9 @@
+pinephone-tweaks (0.7) unstable; urgency=medium
+
+  * add polkit localauthority for ModemManager
+
+ -- Arnaud Ferraris <arnaud.ferraris@collabora.com>  Sat, 28 Mar 2020 14:59:19 +0100
+
 pinephone-tweaks (0.6) unstable; urgency=medium
 
   * boot.cmd.template: disable VT cursor and start with read-only rootfs
