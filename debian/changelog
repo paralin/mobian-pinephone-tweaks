@@ -1,3 +1,12 @@
+pinephone-tweaks (0.8) unstable; urgency=medium
+
+  * set Epiphany's user agent to a mobile UA
+  * add Firefox ESR UI tweaks and diverted desktop file
+  * add custom desktop file for Telegram
+  * hide command-line devtools icons
+
+ -- Arnaud Ferraris <arnaud.ferraris@collabora.com>  Wed, 08 Apr 2020 12:03:27 +0200
+
 pinephone-tweaks (0.7) unstable; urgency=medium
 
   * add polkit localauthority for ModemManager
