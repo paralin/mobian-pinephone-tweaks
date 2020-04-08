@@ -2,7 +2,7 @@
 
 set -e
 
-function remove_diversion() {
+remove_diversion() {
     for app in debian-uxterm debian-xterm firefox-esr htop telegramdesktop vim
     do
         dpkg-divert --package pinephone-tweaks --remove --rename \
