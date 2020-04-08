@@ -5,3 +5,5 @@ tweaks/org.freedesktop.ModemManager1.pkla etc/polkit-1/localauthority/10-vendor.
 tweaks/pinephone.json usr/share/feedbackd/themes/
 tweaks/pinephone-tweaks.sh etc/profile.d
 tweaks/zz-u-boot etc/kernel/postinst.d
+tweaks/applications usr/share
+tweaks/firefox-esr usr/lib

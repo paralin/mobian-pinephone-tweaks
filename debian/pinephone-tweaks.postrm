@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+function remove_diversion() {
+    for app in firefox-esr
+    do
+        dpkg-divert --package pinephone-tweaks --remove --rename \
+                    --divert /usr/share/applications/$app.desktop.orig \
+                    /usr/share/applications/$app.desktop
+    done
+}
+
+if [ remove = "$1" -o abort-install = "$1" -o disappear = "$1" ]; then
+    remove_diversion
+fi
+
+if [ abort-upgrade = "$1" ] || dpkg --compare-versions "$2" lt 0.8; then
+    remove_diversion
+fi
