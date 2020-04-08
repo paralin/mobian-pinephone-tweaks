@@ -3,7 +3,7 @@
 set -e
 
 function remove_diversion() {
-    for app in firefox-esr telegramdesktop
+    for app in debian-uxterm debian-xterm firefox-esr htop telegramdesktop vim
     do
         dpkg-divert --package pinephone-tweaks --remove --rename \
                     --divert /usr/share/applications/$app.desktop.orig \
