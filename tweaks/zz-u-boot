@@ -8,6 +8,12 @@ then
     exit 1
 fi
 
-echo "Creating boot script..."
-sed -e "s/@@REVISION@@/$version/g" /usr/share/pinephone/boot.cmd.template > /boot/boot.cmd
-mkimage -T script -A arm64 -C none -n pinephone -d /boot/boot.cmd /boot/boot.scr
+if [ ! -e /boot/$version -a -e /usr/lib/linux-image-$version ]
+then
+    ln -s /usr/lib/linux-image-$version /boot/$version
+fi
+
+rm -f /boot/dtb /boot/initrd.img /boot/Image.gz
+ln -s /boot/$version /boot/dtb
+ln -s /boot/initrd.img-$version /boot/initrd.img
+ln -s /boot/Image.gz-$version /boot/Image.gz

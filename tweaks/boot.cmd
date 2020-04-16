@@ -17,7 +17,7 @@ echo "Uncompressing kernel..."
 unzip ${ramdisk_addr_r} ${kernel_addr_r}
 
 echo "Loading initramfs..."
-load mmc ${mmc_bootdev}:1 ${ramdisk_addr_r} /boot/initrd.img-@@REVISION@@
+load mmc ${mmc_bootdev}:1 ${ramdisk_addr_r} /boot/initrd.img
 setenv ramdisk_size ${filesize}
 
 echo "Loading dtb..."
