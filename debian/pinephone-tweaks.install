@@ -9,3 +9,4 @@ tweaks/pinephone-tweaks.sh etc/profile.d
 tweaks/zz-u-boot etc/kernel/postinst.d
 tweaks/applications usr/share
 tweaks/firefox-esr usr/lib
+tweaks/scp.bin usr/lib/crust
