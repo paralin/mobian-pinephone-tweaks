@@ -1,3 +1,11 @@
+pinephone-tweaks (0.10) unstable; urgency=medium
+
+  * have logind ignore power key events to prevent unwanted poweroff
+  * let systemd only use s2idle suspend
+  * install crust firmware for SCP
+
+ -- Arnaud Ferraris <arnaud.ferraris@collabora.com>  Thu, 16 Apr 2020 08:33:06 +0200
+
 pinephone-tweaks (0.9) unstable; urgency=medium
 
   * set Telegram Desktop scale to 95%
