@@ -1,3 +1,10 @@
+pinephone-tweaks (0.12) unstable; urgency=medium
+
+  * pinephone-tweaks.sh: add QT_QUICK_CONTROLS_MOBILE env var
+  * applications: add diversion for sm.puri.OSK0
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Mon, 20 Apr 2020 16:50:20 +0200
+
 pinephone-tweaks (0.11) unstable; urgency=medium
 
   * simplify boot script and improve kernel post-install script
