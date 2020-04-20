@@ -11,3 +11,10 @@ then
                     /usr/share/applications/$app.desktop
     done
 fi
+
+if [ upgrade != "$1" ] || dpkg --compare-versions "$2" lt 0.12
+then
+    dpkg-divert --package pinephone-tweaks --add --rename \
+                --divert /usr/share/applications/sm.puri.OSK0.desktop.orig \
+                /usr/share/applications/sm.puri.OSK0.desktop
+fi

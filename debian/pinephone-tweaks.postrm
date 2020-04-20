@@ -3,7 +3,8 @@
 set -e
 
 remove_diversion() {
-    for app in debian-uxterm debian-xterm firefox-esr htop telegramdesktop vim
+    for app in debian-uxterm debian-xterm firefox-esr htop sm.puri.OSK0 \
+               telegramdesktop vim
     do
         dpkg-divert --package pinephone-tweaks --remove --rename \
                     --divert /usr/share/applications/$app.desktop.orig \
@@ -17,4 +18,10 @@ fi
 
 if [ abort-upgrade = "$1" ] || dpkg --compare-versions "$2" lt 0.8; then
     remove_diversion
+fi
+
+if [ abort-upgrade = "$1" ] || dpkg --compare-versions "$2" lt 0.12; then
+    dpkg-divert --package pinephone-tweaks --remove --rename \
+                --divert /usr/share/applications/sm.puri.OSK0.desktop.orig \
+                /usr/share/applications/sm.puri.OSK0.desktop
 fi
