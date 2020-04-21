@@ -5,6 +5,9 @@ sleep-inactive-ac-type='nothing'
 [org.gnome.settings-daemon.plugins.wwan]
 unlock-sim=true
 
+[org.gnome.desktop.wm.preferences]
+button-layout='appmenu:'
+
 [org.nemo.window-state]
 start-with-sidebar=false
 
@@ -14,7 +17,7 @@ click-policy='single'
 
 [org.gnome.Epiphany.web]
 mobile-user-agent=true
-user-agent='Mozilla/5.0 (Debian device, like iPhone; X11; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15 Epiphany/605.1.15'
+user-agent='Mozilla/5.0 (PinePhone, like iPhone; X11; Linux x86_64) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15 Epiphany/605.1.15'
 
 [org.gnome.Cheese]
 photo-x-resolution=1280
