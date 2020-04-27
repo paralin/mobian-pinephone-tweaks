@@ -6,6 +6,7 @@ tweaks/ignore-power-key.conf etc/systemd/logind.conf.d
 tweaks/suspend-s2idle.conf etc/systemd/sleep.conf.d
 tweaks/org.freedesktop.ModemManager1.pkla etc/polkit-1/localauthority/10-vendor.d/
 tweaks/pinephone-tweaks.sh etc/profile.d
+tweaks/phoc.ini etc/phosh
 tweaks/pinephone.json usr/share/feedbackd/themes/
 tweaks/90_pinephone.gschema.override usr/share/glib-2.0/schemas
 tweaks/applications usr/share
