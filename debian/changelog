@@ -1,3 +1,9 @@
+pinephone-tweaks (0.14) unstable; urgency=medium
+
+  * remove systemd-suspend config
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Mon, 27 Apr 2020 13:07:24 +0200
+
 pinephone-tweaks (0.13) unstable; urgency=medium
 
   * gschema.override: remove "close" button from windows
