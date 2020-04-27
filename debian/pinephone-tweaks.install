@@ -3,7 +3,6 @@ tweaks/scp.bin usr/lib/crust
 tweaks/zz-u-boot etc/kernel/postinst.d
 tweaks/10-proximity.rules etc/udev/rules.d
 tweaks/ignore-power-key.conf etc/systemd/logind.conf.d
-tweaks/suspend-s2idle.conf etc/systemd/sleep.conf.d
 tweaks/org.freedesktop.ModemManager1.pkla var/lib/polkit-1/localauthority/10-vendor.d/
 tweaks/pinephone-tweaks.sh etc/profile.d
 tweaks/phoc.ini etc/phosh
