@@ -1,3 +1,13 @@
+pinephone-tweaks (0.13) unstable; urgency=medium
+
+  * gschema.override: remove "close" button from windows
+  * scp: upgrade to latest version
+  * firefox-esr: Use "Touch" layout for scale factor 1.8
+  * set compositor scale factor to 1.8
+  * install ModemManager local authority to /var/lib
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Mon, 27 Apr 2020 12:41:53 +0200
+
 pinephone-tweaks (0.12) unstable; urgency=medium
 
   * pinephone-tweaks.sh: add QT_QUICK_CONTROLS_MOBILE env var
