@@ -3,4 +3,4 @@
 echo "Creating boot script..."
 mkimage -T script -A arm64 -C none -n pinephone -d /boot/boot.cmd /boot/boot.scr
 
-/etc/kernel/postinst.d/zz-u-boot `uname -r`
+/etc/kernel/postinst.d/zz-rename-files `uname -r`
