@@ -14,6 +14,6 @@ then
 fi
 
 rm -f /boot/dtb /boot/initrd.img /boot/Image.gz
-ln -s /boot/$version /boot/dtb
-ln -s /boot/initrd.img-$version /boot/initrd.img
-ln -s /boot/Image.gz-$version /boot/Image.gz
+ln -s $version /boot/dtb
+ln -s initrd.img-$version /boot/initrd.img
+ln -s Image.gz-$version /boot/Image.gz
