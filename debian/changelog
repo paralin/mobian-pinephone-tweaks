@@ -1,3 +1,12 @@
+pinephone-tweaks (0.16) unstable; urgency=medium
+
+  * zz-rename-files: use relative paths for /boot symlinks.
+    Absolute paths can't be resolved if /boot is on a separate partition and
+    we look only at this partition, as u-boot does.
+  * boot.cmd: allow booting from a separate /boot partition
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Wed, 10 Jun 2020 02:03:05 +0200
+
 pinephone-tweaks (0.15) unstable; urgency=medium
 
   * move non-PinePhone-specific parts to `mobian-tweaks`
