@@ -1,0 +1,18 @@
+#!/bin/sh
+
+if [ ! -f /proc/cmdline ]
+then
+    echo "/proc/cmdline doesn't exist, quitting..."
+    exit 0
+fi
+
+ROOTDEV=`sed -e 's/^.*root=\(\/dev\/mmcblk.\).*$/\1/' /proc/cmdline`
+
+if [ ! -b "$ROOTDEV" ]
+then
+    echo "[$ROOTDEV] is not a block device, quitting..."
+    exit 0
+fi
+
+echo "Installing u-boot to $ROOTDEV..."
+u-boot-install-sunxi64 $ROOTDEV

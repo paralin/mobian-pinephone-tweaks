@@ -1,0 +1,2 @@
+DPkg::Pre-Install-Pkgs {"grep -q u-boot-sunxi || exit 0; touch /tmp/upgrade-uboot";};
+DPkg::Post-Invoke {"test -f /tmp/upgrade-uboot || exit 0; /usr/sbin/u-boot-install-pinephone; rm -f /tmp/upgrade-uboot";};
