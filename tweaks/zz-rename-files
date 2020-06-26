@@ -8,6 +8,12 @@ then
     exit 1
 fi
 
+if echo $version | grep -qv pinephone
+then
+    echo "$version doesn't look like a PinePhone kernel, quitting..."
+    exit 0
+fi
+
 if [ ! -e /boot/$version -a -e /usr/lib/linux-image-$version ]
 then
     ln -s /usr/lib/linux-image-$version /boot/$version
