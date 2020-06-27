@@ -14,7 +14,7 @@ else
 	setenv bootdir "/boot"
 fi
 
-setenv bootargs console=ttyS0,115200 no_console_suspend panic=10 consoleblank=0 loglevel=7 root=/dev/mmcblk${linux_mmcdev}p${rootpart} ro splash plymouth.ignore-serial-consoles vt.global_cursor_default=0
+setenv bootargs console=ttyS0,115200 no_console_suspend panic=10 consoleblank=0 loglevel=7 root=/dev/mmcblk${linux_mmcdev}p${rootpart} rw splash plymouth.ignore-serial-consoles vt.global_cursor_default=0
 
 led 1 on
 
