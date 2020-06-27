@@ -1,3 +1,10 @@
+pinephone-tweaks (0.18) unstable; urgency=medium
+
+  * zz-rename-files: add temporary hack to install u-boot on kernel update
+  * boot.cmd: mount rootfs read-write (systemd can't create machine-id)
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Sat, 27 Jun 2020 13:12:10 +0200
+
 pinephone-tweaks (0.17) unstable; urgency=medium
 
   * tweaks: automatically install u-boot on package upgrade
