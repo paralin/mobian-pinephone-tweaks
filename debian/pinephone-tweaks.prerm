@@ -2,5 +2,5 @@
 
 if [ "$1" = "remove" ]; then
     # Disable automatic camera setup
-    systemctl enable pinephone-camera-setup.service
+    systemctl disable pinephone-camera-setup.service
 fi
