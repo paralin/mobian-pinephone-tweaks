@@ -4,5 +4,5 @@ tweaks/boot.cmd boot
 tweaks/phoc.ini etc/phosh
 tweaks/pinephone-camera-setup.sh usr/sbin
 tweaks/scp.bin usr/lib/crust
-tweaks/u-boot-install-pinephone usr/sbin
+tweaks/u-boot-install-pinephone usr/bin
 tweaks/zz-rename-files etc/kernel/postinst.d
