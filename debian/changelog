@@ -1,3 +1,9 @@
+pinephone-tweaks (0.19) unstable; urgency=medium
+
+  * tweaks: configure camera on boot
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Mon, 06 Jul 2020 14:34:30 +0200
+
 pinephone-tweaks (0.18) unstable; urgency=medium
 
   * zz-rename-files: add temporary hack to install u-boot on kernel update
