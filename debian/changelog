@@ -1,3 +1,9 @@
+pinephone-tweaks (0.22) unstable; urgency=medium
+
+  * pinephone-tweaks: fix wrong install paths
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Mon, 06 Jul 2020 23:41:04 +0200
+
 pinephone-tweaks (0.21) unstable; urgency=medium
 
   * pinephone-camera-setup: properly identify the camera device.
