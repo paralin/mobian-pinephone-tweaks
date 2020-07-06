@@ -1,3 +1,9 @@
+pinephone-tweaks (0.20) unstable; urgency=medium
+
+  * pinephone-camera-setup: use back camera by default
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Mon, 06 Jul 2020 15:12:31 +0200
+
 pinephone-tweaks (0.19) unstable; urgency=medium
 
   * tweaks: configure camera on boot
