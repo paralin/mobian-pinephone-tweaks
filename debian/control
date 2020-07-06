@@ -10,7 +10,8 @@ Vcs-Browser: https://gitlab.com/mobian1/devices/pinephone-tweaks
 
 Package: pinephone-tweaks
 Architecture: arm64
-Depends: ${misc:Depends}
+Depends: ${misc:Depends},
+ v4l-utils,
 Description: Special tweaks for the PinePhone
  Additional configuration files for the PinePhone, including:
    - the crust SCP firmware
