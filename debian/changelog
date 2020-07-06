@@ -1,3 +1,13 @@
+pinephone-tweaks (0.21) unstable; urgency=medium
+
+  * pinephone-camera-setup: properly identify the camera device.
+    Also, add a parameter to switch easily from front to back camera
+  * pinephone-camera-setup: install to /usr/bin as it can be useful
+  * pinephone-tweaks: properly disable systemd service in prerm script
+  * d/control: depend on v4l-utils (for pinephone-camera-setup)
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Mon, 06 Jul 2020 23:30:56 +0200
+
 pinephone-tweaks (0.20) unstable; urgency=medium
 
   * pinephone-camera-setup: use back camera by default
