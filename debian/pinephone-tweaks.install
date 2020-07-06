@@ -2,7 +2,7 @@ tweaks/10-proximity.rules etc/udev/rules.d
 tweaks/99-pinephone-uboot etc/apt/apt.conf.d
 tweaks/boot.cmd boot
 tweaks/phoc.ini etc/phosh
-tweaks/pinephone-camera-setup.sh usr/sbin
+tweaks/pinephone-camera-setup.sh usr/bin
 tweaks/scp.bin usr/lib/crust
-tweaks/u-boot-install-pinephone usr/bin
+tweaks/u-boot-install-pinephone usr/sbin
 tweaks/zz-rename-files etc/kernel/postinst.d
