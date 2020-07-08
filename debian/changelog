@@ -1,3 +1,10 @@
+pinephone-tweaks (0.24) unstable; urgency=medium
+
+  * postinst: don't run kernel script.
+    It may prevent running an updated kernel
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Wed, 08 Jul 2020 13:28:03 +0200
+
 pinephone-tweaks (0.23) unstable; urgency=medium
 
   * pinephone-camera-setup: fix bash syntax
