@@ -1,3 +1,9 @@
+pinephone-tweaks (0.26) unstable; urgency=medium
+
+  * scp.bin: update crust firmware to latest version
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Sun, 12 Jul 2020 22:00:33 +0200
+
 pinephone-tweaks (0.25) unstable; urgency=medium
 
   * tweaks: add udev rules for the PinePhone LEDs
