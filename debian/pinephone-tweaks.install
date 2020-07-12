@@ -1,4 +1,5 @@
 tweaks/10-proximity.rules etc/udev/rules.d
+tweaks/20-pinephone-led.rules etc/udev/rules.d
 tweaks/99-pinephone-uboot etc/apt/apt.conf.d
 tweaks/boot.cmd boot
 tweaks/phoc.ini etc/phosh
