@@ -1,3 +1,9 @@
+pinephone-tweaks (0.25) unstable; urgency=medium
+
+  * tweaks: add udev rules for the PinePhone LEDs
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Sun, 12 Jul 2020 15:23:25 +0200
+
 pinephone-tweaks (0.24) unstable; urgency=medium
 
   * postinst: don't run kernel script.
