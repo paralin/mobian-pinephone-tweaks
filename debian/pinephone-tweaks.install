@@ -4,6 +4,7 @@ tweaks/99-pinephone-uboot etc/apt/apt.conf.d
 tweaks/boot.cmd boot
 tweaks/phoc.ini etc/phosh
 tweaks/pinephone-camera-setup.sh usr/bin
+tweaks/pinephone-suspend-hook.sh usr/lib/systemd/system-sleep/
 tweaks/scp.bin usr/lib/crust
 tweaks/u-boot-install-pinephone usr/sbin
 tweaks/zz-rename-files etc/kernel/postinst.d
