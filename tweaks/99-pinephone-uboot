@@ -1,2 +1,2 @@
-DPkg::Pre-Install-Pkgs {"grep -q u-boot-sunxi || exit 0; touch /tmp/upgrade-uboot";};
-DPkg::Post-Invoke {"test -f /tmp/upgrade-uboot || exit 0; /usr/sbin/u-boot-install-pinephone; rm -f /tmp/upgrade-uboot";};
+DPkg::Pre-Install-Pkgs {"if grep -qE '(u-boot-sunxi|arm-trusted-firmware)'; then touch /tmp/upgrade-uboot; else md5sum /usr/lib/crust/scp.bin > /tmp/crust.md5; fi";};
+DPkg::Post-Invoke {"test -f /tmp/upgrade-uboot || if md5sum --quiet -c /tmp/crust.md5; then exit 0; fi; /usr/sbin/u-boot-install-pinephone; rm -f /tmp/upgrade-uboot /tmp/crust.md5";};
