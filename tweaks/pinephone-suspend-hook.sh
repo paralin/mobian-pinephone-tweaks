@@ -2,7 +2,7 @@
 
 prepare_suspend() {
 	# Put modem in power saving mode
-	echo -e 'AT+QSCLK=1\r' > /dev/ttyUSB2
+	echo -ne 'AT+QSCLK=1\r' > /dev/ttyS2
 	echo 1 > /sys/class/gpio/gpio358/value
 
 	# Disable Bluetooth module (fixes kernel OOPS)
@@ -12,7 +12,7 @@ prepare_suspend() {
 resume_all() {
 	# Wake up modem
 	echo 0 > /sys/class/gpio/gpio358/value
-	echo -e 'AT+QSCLK=0\r' > /dev/ttyUSB2
+	echo -ne 'AT+QSCLK=0\r' > /dev/ttyS2
 
 	# Restore system time from RTC
 	hwclock -s
