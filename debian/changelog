@@ -1,3 +1,19 @@
+pinephone-tweaks (0.27) unstable; urgency=medium
+
+  * phoc.ini: revert back to 2x scale.
+    GTK only supports integer scales, using a fractional scale can lead to
+    issues such as the keyboard being narrower than it should be.
+    Reverting to 2x scale factor is safe now that we have automatic
+    scale-to-fit.
+  * 99-pinephone-uboot: improve dpkg hooks
+  * tweaks: add suspend hooks.
+    This allows use to do a few different things:
+    - enable power save mode for the modem
+    - disable bluetooth to avoid a kernel OOPS
+    - restore system time on resume
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Tue, 14 Jul 2020 17:45:23 +0200
+
 pinephone-tweaks (0.26) unstable; urgency=medium
 
   * scp.bin: update crust firmware to latest version
