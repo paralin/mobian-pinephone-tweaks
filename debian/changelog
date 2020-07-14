@@ -1,3 +1,9 @@
+pinephone-tweaks (0.28) unstable; urgency=medium
+
+  * pinephone-suspend-hook: fix AT commands for modem power saving mode
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Tue, 14 Jul 2020 23:29:28 +0200
+
 pinephone-tweaks (0.27) unstable; urgency=medium
 
   * phoc.ini: revert back to 2x scale.
