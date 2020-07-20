@@ -1,3 +1,9 @@
+pinephone-tweaks (0.29) unstable; urgency=medium
+
+  * pinephone-suspend-hook: toggle AP_READY when going in/out of suspend
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Mon, 20 Jul 2020 03:48:44 +0200
+
 pinephone-tweaks (0.28) unstable; urgency=medium
 
   * pinephone-suspend-hook: fix AT commands for modem power saving mode
