@@ -1,3 +1,9 @@
+pinephone-tweaks (0.30) unstable; urgency=medium
+
+  * pinephone-camera-setup: discover camera IDs more robustly
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Thu, 23 Jul 2020 01:34:52 +0200
+
 pinephone-tweaks (0.29) unstable; urgency=medium
 
   * pinephone-suspend-hook: toggle AP_READY when going in/out of suspend
