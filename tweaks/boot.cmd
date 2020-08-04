@@ -16,7 +16,7 @@ fi
 
 setenv bootargs console=ttyS0,115200 no_console_suspend panic=10 consoleblank=0 loglevel=7 root=/dev/mmcblk${linux_mmcdev}p${rootpart} rw splash plymouth.ignore-serial-consoles vt.global_cursor_default=0
 
-led 1 on
+gpio set 116
 
 echo "Loading kernel..."
 load mmc ${mmc_bootdev}:1 ${ramdisk_addr_r} ${bootdir}/Image.gz
@@ -31,7 +31,7 @@ setenv ramdisk_size ${filesize}
 echo "Loading dtb..."
 load mmc ${mmc_bootdev}:1 ${fdt_addr_r} ${bootdir}/dtb/${fdtfile}
 
-led 2 on
+gpio set 115
 
 echo "Booting..."
 booti ${kernel_addr_r} ${ramdisk_addr_r}:0x${ramdisk_size} ${fdt_addr_r}
