@@ -7,7 +7,7 @@ else
 fi
 
 # If we have at least 2 partitions, then the 1st one is /boot, and / is #2
-if fstype mmc ${mmc_bootdev}:2; then
+if part size mmc ${mmc_bootdev} 2 none; then
 	setenv rootpart 2
 else
 	setenv rootpart 1
