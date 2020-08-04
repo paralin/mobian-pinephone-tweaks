@@ -1,3 +1,11 @@
+pinephone-tweaks (0.34) unstable; urgency=medium
+
+  * boot.cmd: control LED using gpio command
+    `led` command is no longer available.
+  * pinephone-suspend-hook: fix DTR gpio number on PCB rev 1.2+
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Wed, 05 Aug 2020 01:30:35 +0200
+
 pinephone-tweaks (0.33) unstable; urgency=medium
 
   * postinst: fix wrong comment
