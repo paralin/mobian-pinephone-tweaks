@@ -12,9 +12,6 @@ prepare_suspend() {
 }
 
 resume_all() {
-	# Restore system time from RTC
-	hwclock -s
-
 	# Wake up modem
 	echo -ne 'AT+QSCLK=0\r' > /dev/ttyS2
 	echo 0 > /sys/class/gpio/gpio231/value
