@@ -1,3 +1,10 @@
+pinephone-tweaks (0.32) unstable; urgency=medium
+
+  * pinephone-suspend-hook: don't use hwclock to set time back
+  * pinephone-suspend-hooks: enable URC caching during suspend
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Tue, 04 Aug 2020 16:50:34 +0200
+
 pinephone-tweaks (0.31) unstable; urgency=medium
 
   * pinephone-suspend-hook: remove Bluetooth tweaks.
