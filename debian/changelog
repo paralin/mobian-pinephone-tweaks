@@ -1,3 +1,10 @@
+pinephone-tweaks (0.33) unstable; urgency=medium
+
+  * postinst: fix wrong comment
+  * boot.cmd: fix partition scheme detection when using F2FS
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Tue, 04 Aug 2020 23:08:10 +0200
+
 pinephone-tweaks (0.32) unstable; urgency=medium
 
   * pinephone-suspend-hook: don't use hwclock to set time back
