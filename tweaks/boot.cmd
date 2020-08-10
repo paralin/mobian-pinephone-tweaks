@@ -1,3 +1,5 @@
+gpio set 98 # Enable vibrator
+
 if test ${mmc_bootdev} -eq 0; then
 	echo "Booting from SD"
 	setenv linux_mmcdev 0
@@ -34,4 +36,5 @@ load mmc ${mmc_bootdev}:1 ${fdt_addr_r} ${bootdir}/dtb/${fdtfile}
 gpio set 115
 
 echo "Booting..."
+gpio clear 98 # Disable vibrator
 booti ${kernel_addr_r} ${ramdisk_addr_r}:0x${ramdisk_size} ${fdt_addr_r}
