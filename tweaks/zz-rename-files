@@ -8,10 +8,6 @@ then
     exit 1
 fi
 
-# TEMPORARY FIX: update u-boot on each kernel install
-# This is needed for people with old images, will be removed in a few weeks
-/usr/sbin/u-boot-install-pinephone
-
 if echo $version | grep -qv pinephone
 then
     echo "$version doesn't look like a PinePhone kernel, quitting..."
