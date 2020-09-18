@@ -1,3 +1,9 @@
+pinephone-tweaks (0.37) unstable; urgency=medium
+
+  * zz-rename-files: allow *sunxi* kernels
+
+ -- Arnaud Ferraris <arnaud.ferraris@gmail.com>  Fri, 18 Sep 2020 17:22:05 +0200
+
 pinephone-tweaks (0.36) unstable; urgency=medium
 
   * tweaks: don't upgrade u-boot automatically.
