@@ -8,7 +8,7 @@ then
     exit 1
 fi
 
-if echo $version | grep -qv pinephone
+if echo $version | grep -qvE "(pinephone|sunxi)"
 then
     echo "$version doesn't look like a PinePhone kernel, quitting..."
     exit 0
