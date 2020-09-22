@@ -2,9 +2,3 @@
 
 echo "Creating boot script..."
 mkimage -T script -A arm64 -C none -n pinephone -d /boot/boot.cmd /boot/boot.scr
-
-if [ "$1" = "configure" ]; then
-    # Automatically setup camera on boot
-    systemctl unmask pinephone-camera-setup.service
-    systemctl enable pinephone-camera-setup.service
-fi
