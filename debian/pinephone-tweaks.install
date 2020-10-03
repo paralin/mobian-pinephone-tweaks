@@ -1,6 +1,8 @@
 tweaks/10-proximity.rules etc/udev/rules.d
 tweaks/20-pinephone-led.rules etc/udev/rules.d
 tweaks/boot.cmd boot
+tweaks/pinephone.json usr/share/feedbackd/themes/
+tweaks/pinephone.sh etc/profile.d
 tweaks/pinephone-suspend-hook.sh usr/lib/systemd/system-sleep/
 tweaks/scp.bin usr/lib/crust
 tweaks/u-boot-install-pinephone usr/sbin
